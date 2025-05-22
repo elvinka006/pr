@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXURY - Ювелирные украшения</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="index.html">LUXURY</a>
+          </div>
+          <nav class="nav">
+            <a class="nav__link" href="#">Коллекции</a>
+            <a class="nav__link" href="#">Серьги</a>
+            <a class="nav__link" href="#">Кольца</a>
+            <a class="nav__link" href="#">Подвески</a>
+            <a class="nav__link" href="#">Браслеты</a>
+            <a class="nav__link" href="#">О нас</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </nav>
+          <div class="header__icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+          </div>
+          <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="banner">
+      <div class="container">
+        <div class="banner__content">
+          <h1>Эксклюзивные ювелирные украшения</h1>
+          <p>Роскошь, воплощенная в каждом изделии</p>
+          <a href="#" class="btn">Смотреть коллекцию</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные категории -->
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Популярные категории</h2>
+        <div class="categories__grid">
+          <div class="category__item">
+            <img src="images/category-rings.jpg" alt="Кольца" />
+            <h3>Кольца</h3>
+            <a href="#" class="btn-link">Смотреть все</a>
+          </div>
+          <div class="category__item">
+            <img src="images/category-earrings.jpg" alt="Серьги" />
+            <h3>Серьги</h3>
+            <a href="#" class="btn-link">Смотреть все</a>
+          </div>
+          <div class="category__item">
+            <img src="images/category-necklaces.jpg" alt="Подвески" />
+            <h3>Подвески</h3>
+            <a href="#" class="btn-link">Смотреть все</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="products">
+      <div class="container">
+        <h2 class="section-title">Популярные товары</h2>
+        <div class="products__grid">
+          <!-- Товар 1 -->
+          <div class="product__item">
+            <div class="product__image">
+              <img src="images/product-1.jpg" alt="Кольцо с бриллиантом" />
+              <div class="product__actions">
+                <button class="wishlist"><i class="far fa-heart"></i></button>
+                <button class="quick-view">Быстрый просмотр</button>
+              </div>
+            </div>
+            <h3>Кольцо с бриллиантом</h3>
+            <div class="product__price">45 000 ₽</div>
+            <button class="btn btn--small">В корзину</button>
+          </div>
+
+          <!-- Товар 2 -->
+          <div class="product__item">
+            <div class="product__image">
+              <img src="images/product-2.jpg" alt="Золотые серьги" />
+              <div class="product__actions">
+                <button class="wishlist"><i class="far fa-heart"></i></button>
+                <button class="quick-view">Быстрый просмотр</button>
+              </div>
+            </div>
+            <h3>Золотые серьги</h3>
+            <div class="product__price">32 500 ₽</div>
+            <button class="btn btn--small">В корзину</button>
+          </div>
+
+          <!-- Товар 3 -->
+          <div class="product__item">
+            <div class="product__image">
+              <img src="images/product-3.jpg" alt="Подвеска с сапфиром" />
+              <div class="product__actions">
+                <button class="wishlist"><i class="far fa-heart"></i></button>
+                <button class="quick-view">Быстрый просмотр</button>
+              </div>
+            </div>
+            <h3>Подвеска с сапфиром</h3>
+            <div class="product__price">28 700 ₽</div>
+            <button class="btn btn--small">В корзину</button>
+          </div>
+
+          <!-- Товар 4 -->
+          <div class="product__item">
+            <div class="product__image">
+              <img src="images/product-4.jpg" alt="Браслет из белого золота" />
+              <div class="product__actions">
+                <button class="wishlist"><i class="far fa-heart"></i></button>
+                <button class="quick-view">Быстрый просмотр</button>
+              </div>
+            </div>
+            <h3>Браслет из белого золота</h3>
+            <div class="product__price">67 200 ₽</div>
+            <button class="btn btn--small">В корзину</button>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn">Все товары</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О компании -->
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image">
+            <img src="images/about.jpg" alt="О компании" />
+          </div>
+          <div class="about__content">
+            <h2 class="section-title">О компании LUXURY</h2>
+            <p>
+              Мы создаем эксклюзивные ювелирные украшения с 2010 года. Каждое
+              изделие изготовлено вручную с использованием только
+              высококачественных материалов и драгоценных камней.
+            </p>
+            <p>
+              Наши мастера сочетают традиционные техники с современным дизайном,
+              создавая уникальные украшения, которые подчеркивают
+              индивидуальность их владельца.
+            </p>
+            <a href="#" class="btn">Подробнее о нас</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рассылка -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h2>Подпишитесь на рассылку</h2>
+          <p>
+            Получайте эксклюзивные предложения и первыми узнавайте о новых
+            коллекциях
+          </p>
+          <form class="newsletter__form">
+            <input type="email" placeholder="Ваш email" required />
+            <button type="submit" class="btn">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h3>LUXURY</h3>
+            <p>
+              Эксклюзивные ювелирные украшения ручной работы из золота и серебра
+              с драгоценными камнями.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h3>Меню</h3>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Коллекции</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Категории</h3>
+            <ul>
+              <li><a href="#">Кольца</a></li>
+              <li><a href="#">Серьги</a></li>
+              <li><a href="#">Подвески</a></li>
+              <li><a href="#">Браслеты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 12
+              </li>
+              <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+              <li><i class="fas fa-envelope"></i> info@luxury.ru</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2023 LUXURY. Все права защищены.</p>
+          <div class="footer__links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
