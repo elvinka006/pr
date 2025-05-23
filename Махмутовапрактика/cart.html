@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина - ROYAL GEMS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="index.html">ROYAL GEMS</a>
+          </div>
+          <nav class="nav">
+            <a class="nav__link" href="index.html">Главная</a>
+            <a class="nav__link" href="./katalog.html">Каталог</a>
+            <a class="nav__link" href="#">Кольца</a>
+            <a class="nav__link" href="#">Серьги</a>
+            <a class="nav__link" href="#">Подвески</a>
+            <a class="nav__link" href="#">Браслеты</a>
+            <a class="nav__link" href="#">О нас</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </nav>
+          <div class="header__icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="cart.html" class="cart-link">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </div>
+          <button class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li>Корзина</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Основное содержимое корзины -->
+    <main class="cart-page">
+      <div class="container">
+        <h1 class="page-title">Ваша корзина</h1>
+
+        <div class="cart-container">
+          <!-- Таблица товаров -->
+          <div class="cart-items">
+            <div class="cart-header">
+              <div class="cart-header__product">Товар</div>
+              <div class="cart-header__price">Цена</div>
+              <div class="cart-header__quantity">Количество</div>
+              <div class="cart-header__total">Итого</div>
+              <div class="cart-header__remove"></div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item__product">
+                <img src="./img/triniti.jpg" alt="Серебряное кольцо Тринити" />
+                <div class="cart-item__info">
+                  <h3>Серебряное кольцо Тринити</h3>
+                  <p>Артикул: RG-001</p>
+                </div>
+              </div>
+              <div class="cart-item__price">7 560 ₽</div>
+              <div class="cart-item__quantity">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <div class="cart-item__total">7 560 ₽</div>
+              <div class="cart-item__remove">
+                <button class="remove-btn"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="cart-item__product">
+                <img src="./img/kongo.jpg" alt="Серьги Конго с позолотой" />
+                <div class="cart-item__info">
+                  <h3>Серебряные серьги Конго с позолотой</h3>
+                  <p>Артикул: RG-002</p>
+                </div>
+              </div>
+              <div class="cart-item__price">7 200 ₽</div>
+              <div class="cart-item__quantity">
+                <button class="quantity-btn minus">-</button>
+                <input type="number" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus">+</button>
+              </div>
+              <div class="cart-item__total">7 200 ₽</div>
+              <div class="cart-item__remove">
+                <button class="remove-btn"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Итоговая сумма -->
+          <div class="cart-summary">
+            <h3>Итог заказа</h3>
+            <div class="summary-row">
+              <span>Промежуточный итог</span>
+              <span>14 760 ₽</span>
+            </div>
+            <div class="summary-row">
+              <span>Доставка</span>
+              <span>Бесплатно</span>
+            </div>
+            <div class="summary-row total">
+              <span>Общая сумма</span>
+              <span>14 760 ₽</span>
+            </div>
+            <button class="btn btn--checkout">Оформить заказ</button>
+            <a href="#" class="continue-shopping">Продолжить покупки</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h3>Royal Gems</h3>
+            <p>
+              Эксклюзивные ювелирные украшения ручной работы из серебра 925
+              пробы с драгоценными камнями.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+          </div>
+          <div class="footer__col">
+            <h3>Меню</h3>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Блог</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Категории</h3>
+            <ul>
+              <li><a href="#">Кольца</a></li>
+              <li><a href="#">Серьги</a></li>
+              <li><a href="#">Подвески</a></li>
+              <li><a href="#">Браслеты</a></li>
+              <li><a href="#">Комплекты</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Контакты</h3>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 12
+              </li>
+              <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
+              <li><i class="fas fa-envelope"></i> info@royalgems.ru</li>
+              <li><i class="fas fa-clock"></i> Пн-Пт: 10:00 - 20:00</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; 2025 Royal Gems. Все права защищены.</p>
+          <div class="footer__links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

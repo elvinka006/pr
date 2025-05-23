@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LUXURY - Ювелирные украшения</title>
+    <title>ROYAL GEMS - Ювелирные украшения</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -20,12 +20,13 @@
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
-            <a href="index.html">LUXURY</a>
+            <a href="index.html">ROYAL GEMS</a>
           </div>
           <nav class="nav">
-            <a class="nav__link" href="#">Коллекции</a>
-            <a class="nav__link" href="#">Серьги</a>
+            <a class="nav__link" href="#">Главная</a>
+            <a class="nav__link" href="#">Каталог</a>
             <a class="nav__link" href="#">Кольца</a>
+            <a class="nav__link" href="#">Серьги</a>
             <a class="nav__link" href="#">Подвески</a>
             <a class="nav__link" href="#">Браслеты</a>
             <a class="nav__link" href="#">О нас</a>
@@ -34,7 +35,10 @@
           <div class="header__icons">
             <a href="#"><i class="fas fa-search"></i></a>
             <a href="#"><i class="fas fa-user"></i></a>
-            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="cart.html" class="cart-link">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="cart-count">0</span>
+            </a>
           </div>
           <button class="burger" id="burger">
             <span></span>
@@ -46,35 +50,87 @@
     </header>
 
     <!-- Главный баннер -->
-    <section class="banner">
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Эксклюзивные ювелирные украшения из серебра 925 пробы</h1>
+        <p>
+          Роскошные изделия ручной работы с драгоценными камнями для тех, кто
+          ценит качество и уникальность
+        </p>
+        <a href="#" class="btn">Смотреть коллекцию</a>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
       <div class="container">
-        <div class="banner__content">
-          <h1>Эксклюзивные ювелирные украшения</h1>
-          <p>Роскошь, воплощенная в каждом изделии</p>
-          <a href="#" class="btn">Смотреть коллекцию</a>
+        <div class="features__grid">
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3 class="feature__title">Качество материалов</h3>
+            <p>Используем только серебро 925 пробы и натуральные камни</p>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <h3 class="feature__title">Ручная работа</h3>
+            <p>Каждое изделие создается вручную нашими мастерами</p>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3 class="feature__title">Быстрая доставка</h3>
+            <p>Отправка заказов в день оформления</p>
+          </div>
+          <div class="feature__item">
+            <div class="feature__icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3 class="feature__title">Гарантия 1 год</h3>
+            <p>Гарантия на все изделия от производителя</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Популярные категории -->
+    <!-- Категории -->
     <section class="categories">
       <div class="container">
-        <h2 class="section-title">Популярные категории</h2>
+        <h2 class="section-title">Наши коллекции</h2>
         <div class="categories__grid">
           <div class="category__item">
-            <img src="images/category-rings.jpg" alt="Кольца" />
-            <h3>Кольца</h3>
-            <a href="#" class="btn-link">Смотреть все</a>
+            <img src="./img/1.jpg" alt="Кольца" />
+            <div class="category__overlay">
+              <h3>Серьги из серебра</h3>
+            </div>
           </div>
           <div class="category__item">
-            <img src="images/category-earrings.jpg" alt="Серьги" />
-            <h3>Серьги</h3>
-            <a href="#" class="btn-link">Смотреть все</a>
+            <img src="./img/2.jpg" alt="Серьги из серебра" />
+            <div class="category__overlay">
+              <h3>Серьги из серебра с подзолотой</h3>
+            </div>
           </div>
           <div class="category__item">
-            <img src="images/category-necklaces.jpg" alt="Подвески" />
-            <h3>Подвески</h3>
-            <a href="#" class="btn-link">Смотреть все</a>
+            <img src="./img/3.jpg" alt="Серьги из серебра с подзолотой" />
+            <div class="category__overlay">
+              <h3>Кольца из серебра</h3>
+            </div>
+          </div>
+          <div class="category__item">
+            <img src="./img/4.jpg" alt="Кольца из серебра с подзолотой" />
+            <div class="category__overlay">
+              <h3>Кольца из серебра с подзолотой</h3>
+            </div>
+          </div>
+          <div class="category__item">
+            <img src="./img/5.jpg" alt="Браслеты" />
+            <div class="category__overlay">
+              <h3>Браслеты</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -87,105 +143,185 @@
         <div class="products__grid">
           <!-- Товар 1 -->
           <div class="product__item">
+            <div class="product__badge">Хит</div>
+            <button class="wishlist"><i class="far fa-heart"></i></button>
             <div class="product__image">
-              <img src="images/product-1.jpg" alt="Кольцо с бриллиантом" />
+              <img src="./img/triniti.jpg" alt="Серебряное кольцо Тринити" />
               <div class="product__actions">
-                <button class="wishlist"><i class="far fa-heart"></i></button>
                 <button class="quick-view">Быстрый просмотр</button>
               </div>
             </div>
-            <h3>Кольцо с бриллиантом</h3>
-            <div class="product__price">45 000 ₽</div>
-            <button class="btn btn--small">В корзину</button>
+            <div class="product__info">
+              <h3>Серебряное кольцо Тринити</h3>
+              <div class="product__price">
+                <span class="product__price--current">7 560 ₽</span>
+                <span class="product__price--old">15 000 ₽</span>
+              </div>
+              <button class="btn btn--small">В корзину</button>
+            </div>
           </div>
 
           <!-- Товар 2 -->
           <div class="product__item">
+            <button class="wishlist"><i class="far fa-heart"></i></button>
             <div class="product__image">
-              <img src="images/product-2.jpg" alt="Золотые серьги" />
+              <img src="./img/kongo.jpg" alt="Серьги Конго с позолотой" />
               <div class="product__actions">
-                <button class="wishlist"><i class="far fa-heart"></i></button>
                 <button class="quick-view">Быстрый просмотр</button>
               </div>
             </div>
-            <h3>Золотые серьги</h3>
-            <div class="product__price">32 500 ₽</div>
-            <button class="btn btn--small">В корзину</button>
+            <div class="product__info">
+              <h3>Серебряные серьги Конго с позолотой</h3>
+              <div class="product__price">
+                <span class="product__price--current">7 200 ₽</span>
+              </div>
+              <button class="btn btn--small">В корзину</button>
+            </div>
           </div>
 
           <!-- Товар 3 -->
           <div class="product__item">
+            <div class="product__badge">Новинка</div>
+            <button class="wishlist"><i class="far fa-heart"></i></button>
             <div class="product__image">
-              <img src="images/product-3.jpg" alt="Подвеска с сапфиром" />
+              <img
+                src="./img/braslet.jpg"
+                alt="Широкий браслет из серебра с позолотой"
+              />
               <div class="product__actions">
-                <button class="wishlist"><i class="far fa-heart"></i></button>
                 <button class="quick-view">Быстрый просмотр</button>
               </div>
             </div>
-            <h3>Подвеска с сапфиром</h3>
-            <div class="product__price">28 700 ₽</div>
-            <button class="btn btn--small">В корзину</button>
+            <div class="product__info">
+              <h3>Широкий браслет из серебра с позолотой</h3>
+              <div class="product__price">
+                <span class="product__price--current">20 700 ₽</span>
+              </div>
+              <button class="btn btn--small">В корзину</button>
+            </div>
           </div>
 
           <!-- Товар 4 -->
           <div class="product__item">
+            <button class="wishlist"><i class="far fa-heart"></i></button>
             <div class="product__image">
-              <img src="images/product-4.jpg" alt="Браслет из белого золота" />
+              <img
+                src="./img/kolta2.jpg"
+                alt="Кольцо Сердце серебро с позолотой"
+              />
               <div class="product__actions">
-                <button class="wishlist"><i class="far fa-heart"></i></button>
                 <button class="quick-view">Быстрый просмотр</button>
               </div>
             </div>
-            <h3>Браслет из белого золота</h3>
-            <div class="product__price">67 200 ₽</div>
-            <button class="btn btn--small">В корзину</button>
+            <div class="product__info">
+              <h3>Кольцо Сердце серебро с позолотой</h3>
+              <div class="product__price">
+                <span class="product__price--current">8 100 ₽</span>
+                <span class="product__price--old">10 000 ₽</span>
+              </div>
+              <button class="btn btn--small">В корзину</button>
+            </div>
           </div>
         </div>
         <div class="text-center">
-          <a href="#" class="btn">Все товары</a>
+          <a href="./katalog.html" class="btn">Все товары</a>
         </div>
       </div>
     </section>
 
     <!-- О компании -->
     <section class="about">
-      <div class="container">
-        <div class="about__inner">
-          <div class="about__image">
-            <img src="images/about.jpg" alt="О компании" />
-          </div>
-          <div class="about__content">
-            <h2 class="section-title">О компании LUXURY</h2>
-            <p>
-              Мы создаем эксклюзивные ювелирные украшения с 2010 года. Каждое
-              изделие изготовлено вручную с использованием только
-              высококачественных материалов и драгоценных камней.
-            </p>
-            <p>
-              Наши мастера сочетают традиционные техники с современным дизайном,
-              создавая уникальные украшения, которые подчеркивают
-              индивидуальность их владельца.
-            </p>
-            <a href="#" class="btn">Подробнее о нас</a>
-          </div>
-        </div>
+      <div class="about__content">
+        <h2 class="section-title">О компании Royal Gems</h2>
+        <p>
+          Мы создаем эксклюзивные ювелирные украшения с 2010 года. Каждое
+          изделие изготовлено вручную с использованием только высококачественных
+          материалов и драгоценных камней.
+        </p>
+        <p>
+          Наши мастера сочетают традиционные техники с современным дизайном,
+          создавая уникальные украшения, которые подчеркивают индивидуальность
+          их владельца.
+        </p>
+        <a href="#" class="btn">Подробнее о нас</a>
       </div>
     </section>
+    <!-- Добавьте этот блок после секции "О компании" или в другом подходящем месте -->
+<section class="calculator-section">
+  <div class="container">
+    <h2 class="section-title">Калькулятор стоимости изделия</h2>
+    <div class="calculator">
+      <div class="calculator__form">
+        <div class="form-group">
+          <label for="material">Материал:</label>
+          <select id="material" class="form-control">
+            <option value="925">Серебро 925 пробы</option>
+            <option value="gold_plated">Серебро с позолотой</option>
+            <option value="gold">Золото 585 пробы</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="product-type">Тип изделия:</label>
+          <select id="product-type" class="form-control">
+            <option value="ring">Кольцо</option>
+            <option value="earrings">Серьги</option>
+            <option value="pendant">Подвеска</option>
+            <option value="bracelet">Браслет</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="weight">Вес (в граммах):</label>
+          <input type="number" id="weight" class="form-control" min="1" max="100" value="5">
+        </div>
+        
+        <div class="form-group">
+          <label for="stones">Драгоценные камни:</label>
+          <select id="stones" class="form-control">
+            <option value="0">Без камней</option>
+            <option value="1">1 камень</option>
+            <option value="2">2-3 камня</option>
+            <option value="3">4-5 камней</option>
+            <option value="4">Более 5 камней</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="complexity">Сложность работы:</label>
+          <select id="complexity" class="form-control">
+            <option value="1">Простая</option>
+            <option value="2">Средняя</option>
+            <option value="3">Высокая</option>
+            <option value="4">Эксклюзивная</option>
+          </select>
+        </div>
+        
+        <button id="calculate-btn" class="btn">Рассчитать стоимость</button>
+      </div>
+      
+      <div class="calculator__result">
+        <h3>Примерная стоимость:</h3>
+        <div class="result-price" id="result-price">0 ₽</div>
+        <p class="result-note">* Точную стоимость уточняйте у нашего менеджера</p>
+        <button id="consult-btn" class="btn btn--outline">Получить консультацию</button>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- Рассылка -->
     <section class="newsletter">
       <div class="container">
-        <div class="newsletter__inner">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>
-            Получайте эксклюзивные предложения и первыми узнавайте о новых
-            коллекциях
-          </p>
-          <form class="newsletter__form">
-            <input type="email" placeholder="Ваш email" required />
-            <button type="submit" class="btn">Подписаться</button>
-          </form>
-        </div>
+        <h2>Подпишитесь на рассылку</h2>
+        <p>
+          Получайте эксклюзивные предложения и первыми узнавайте о новых
+          коллекциях
+        </p>
+        <form class="newsletter__form">
+          <input type="email" placeholder="Ваш email" required />
+          <button type="submit" class="btn">Подписаться</button>
+        </form>
       </div>
     </section>
 
@@ -194,10 +330,10 @@
       <div class="container">
         <div class="footer__grid">
           <div class="footer__col">
-            <h3>LUXURY</h3>
+            <h3>Royal Gems</h3>
             <p>
-              Эксклюзивные ювелирные украшения ручной работы из золота и серебра
-              с драгоценными камнями.
+              Эксклюзивные ювелирные украшения ручной работы из серебра 925
+              пробы с драгоценными камнями.
             </p>
             <div class="social-links">
               <a href="#"><i class="fab fa-instagram"></i></a>
@@ -209,9 +345,10 @@
             <h3>Меню</h3>
             <ul>
               <li><a href="#">Главная</a></li>
-              <li><a href="#">Коллекции</a></li>
+              <li><a href="#">Каталог</a></li>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Контакты</a></li>
+              <li><a href="#">Блог</a></li>
             </ul>
           </div>
           <div class="footer__col">
@@ -221,6 +358,7 @@
               <li><a href="#">Серьги</a></li>
               <li><a href="#">Подвески</a></li>
               <li><a href="#">Браслеты</a></li>
+              <li><a href="#">Комплекты</a></li>
             </ul>
           </div>
           <div class="footer__col">
@@ -230,12 +368,13 @@
                 <i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 12
               </li>
               <li><i class="fas fa-phone"></i> +7 (495) 123-45-67</li>
-              <li><i class="fas fa-envelope"></i> info@luxury.ru</li>
+              <li><i class="fas fa-envelope"></i> info@royalgems.ru</li>
+              <li><i class="fas fa-clock"></i> Пн-Пт: 10:00 - 20:00</li>
             </ul>
           </div>
         </div>
         <div class="footer__bottom">
-          <p>&copy; 2023 LUXURY. Все права защищены.</p>
+          <p>&copy; 2025 Royal Gems. Все права защищены.</p>
           <div class="footer__links">
             <a href="#">Политика конфиденциальности</a>
             <a href="#">Условия использования</a>
